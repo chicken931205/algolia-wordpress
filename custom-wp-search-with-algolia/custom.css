@@ -1,0 +1,9 @@
+div.hkb-article__link {
+    cursor: pointer;
+}
+
+.algolia-search-highlight {
+    background-color: #e5dc6f;
+    border-radius: 2px;
+    font-style: normal;
+}

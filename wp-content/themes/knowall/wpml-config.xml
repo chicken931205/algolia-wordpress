@@ -1,0 +1,11 @@
+<wpml-config>
+  <admin-texts>
+    <key name="theme_mods_knowall">
+      <key name="ht_setting__copyright"/>
+      <key name="ht_setting__searchtitle"/>
+      <key name="ht_setting__homepagetitle"/>
+      <key name="ht_setting__searchplaceholder" />
+      <key name="ht_setting__themelogo" />
+    </key>
+  </admin-texts>
+</wpml-config>

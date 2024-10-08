@@ -1,0 +1,346 @@
+/*
+Theme Name:     KnowAll Child Theme
+Theme URI: 		http://herothemes.com/
+Description:    Child theme for KnowAll 
+Author: 		HeroThemes
+Author URI: 	http://herothemes.com
+Template:       knowall
+Version:        1.0.0
+*/
+
+/* ------- Insert custom styles below this line ------- */
+.hkb-site-search__button {
+    height: 50px;
+}
+
+.sel-site-search-cats {
+    float: none;
+    margin-top: 15px;
+    text-align: left;
+}
+#homepage-features {
+    background: #f5f8fa;
+    padding: 30px 0
+}
+
+@media screen and (min-width: 550px) {
+    #homepage-features {
+        padding:40px 0
+    }
+}
+
+#homepage-features .hf-block {
+    background: #fff;
+    padding: 25px;
+    text-align: center
+}
+
+#homepage-features .hf-block:hover {
+    background: #434345;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+#homepage-features .hf-block:hover i,#homepage-features .hf-block:hover h4 {
+    color: #fff
+}
+
+#homepage-features .hf-block:hover h5 {
+    color: rgba(255,255,255,0.8)
+}
+
+#homepage-features .hf-block i {
+    float: left;
+    font-size: 40px;
+    margin: 0 0 20px
+}
+
+@media screen and (min-width: 620px) and (max-width: 770px) {
+    #homepage-features .hf-block i {
+        float:none
+    }
+}
+
+#homepage-features .hf-block h4 {
+    font-size: 22px;
+    margin: 0 0 10px
+}
+
+#homepage-features .hf-block h5 {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+    line-height: 20px
+}
+
+@media screen and (min-width: 620px) and (max-width: 750px) {
+    #homepage-features {
+        padding:30px 0
+    }
+}
+
+.ht-grid {
+    *zoom:1}
+
+@media screen and (min-width: 400px) {
+    .ht-grid.ht-grid-gutter-10 {
+        margin:0 -10px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .ht-grid.ht-grid-gutter-10 .ht-grid-col {
+        padding:0 10px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .ht-grid.ht-grid-gutter-20 {
+        margin:0 -20px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .ht-grid.ht-grid-gutter-20 .ht-grid-col {
+        padding:0 20px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .ht-grid.ht-grid-gutter-30 {
+        margin:0 -30px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .ht-grid.ht-grid-gutter-30 .ht-grid-col {
+        padding:0 30px
+    }
+}
+
+.ht-grid.ht-grid-gutter-bottom-10 .ht-grid-col {
+    margin-bottom: 10px
+}
+
+.ht-grid.ht-grid-gutter-bottom-20 .ht-grid-col {
+    margin-bottom: 20px
+}
+
+.ht-grid.ht-grid-gutter-bottom-30 .ht-grid-col {
+    margin-bottom: 30px
+}
+
+.ht-grid.ht-grid-gutter-bottom-40 .ht-grid-col {
+    margin-bottom: 40px
+}
+
+.ht-grid:before,.ht-grid:after {
+    display: table;
+    content: ""
+}
+
+.ht-grid:after {
+    clear: both
+}
+
+.ht-grid .ht-grid-col {
+    float: left
+}
+
+.ht-grid .ht-grid-12 {
+    width: 100%
+}
+
+.ht-grid .ht-grid-11 {
+    width: 91.666%
+}
+
+.ht-grid .ht-grid-10 {
+    width: 83.333%
+}
+
+.ht-grid .ht-grid-9 {
+    width: 75%
+}
+
+.ht-grid .ht-grid-8 {
+    width: 66.666%
+}
+
+.ht-grid .ht-grid-7 {
+    width: 58.333%
+}
+
+.ht-grid .ht-grid-6 {
+    width: 50%
+}
+
+.ht-grid .ht-grid-5 {
+    width: 41.666%
+}
+
+.ht-grid .ht-grid-4 {
+    width: 33.333%
+}
+
+.ht-grid .ht-grid-3 {
+    width: 25%
+}
+
+@media screen and (max-width: 720px) {
+    .ht-grid .ht-grid-3 {
+        width:50%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ht-grid .ht-grid-3 {
+        width:100%
+    }
+}
+
+.ht-grid .ht-grid-2 {
+    width: 16.666%
+}
+
+@media screen and (max-width: 800px) {
+    .ht-grid .ht-grid-2 {
+        width:33.333%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ht-grid .ht-grid-2 {
+        width:50%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ht-grid .ht-grid-2 {
+        width:100%
+    }
+}
+
+.ht-grid .ht-grid-1 {
+    width: 8.333%
+}
+
+@media screen and (max-width: 800px) {
+    .ht-grid .ht-grid-1 {
+        width:16.666%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ht-grid .ht-grid-1 {
+        width:25%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ht-grid .ht-grid-1 {
+        width:33.333%
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .ht-grid .ht-grid-11,.ht-grid .ht-grid-10,.ht-grid .ht-grid-9,.ht-grid .ht-grid-8,.ht-grid .ht-grid-7,.ht-grid .ht-grid-6,.ht-grid .ht-grid-5,.ht-grid .ht-grid-4 {
+        width:100%
+    }
+}
+
+/*footer css*/
+#site-footer {
+    background: #f5f8fa;
+    color: #666;
+    padding: 30px 0
+}
+
+#site-footer #copyright {
+    color: #666;
+    float: left;
+    font-size: 13px;
+    margin: 0 25px 0 0;
+    position: relative;
+    z-index: 9
+}
+
+#site-footer #copyright a,#site-footer #copyright a:visited {
+    color: #1a1a1a
+}
+
+#site-footer-widgets {
+    background: #f5f8fa;
+    color: #666;
+    padding: 60px 0 10px;
+    font-size: 14px;
+    line-height: 22px
+}
+
+#site-footer-widgets a,#site-footer-widgets a:visited {
+    color: #666
+}
+
+#site-footer-widgets a:hover {
+    color: #1a1a1a
+}
+
+#site-footer-widgets .widget {
+    margin-bottom: 30px;
+    position: relative
+}
+
+#site-footer-widgets .widget .widget-footer {
+    margin-bottom: 25px
+}
+#site-footer-widgets .wp-block-heading{
+font-size: 17px;
+    margin: 0 0 20px;
+}
+
+#site-footer-widgets .widget>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#site-footer-widgets .widget>ul>li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e7e9
+}
+
+#site-footer-widgets .widget>ul>li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0
+}
+.ht-flex{
+display:flex;
+gap:20px;
+}
+.ht-flex .footer-widget:first-child{
+width:33.33%
+}
+.ht-flex .footer-widget:last-child{
+width:33.33%
+}
+
+@media screen and (max-width: 620px) {
+.ht-flex{
+flex-direction:column;
+}
+  .ht-flex .footer-widget:first-child{
+width:100%
+}
+.ht-flex .footer-widget:last-child{
+width:100%
+}
+}
+.widget-footer{
+font-size: 17px;
+    margin: 0 0 20px;
+}

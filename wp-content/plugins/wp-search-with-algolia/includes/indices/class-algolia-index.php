@@ -175,11 +175,40 @@ abstract class Algolia_Index {
 	 */
 	final public function search( $query, $args = null, $order_by = null, $order = 'desc' ) {
 
+		if (is_array($query)) {
+			$this->multipleQuery( $query, $args, $order_by, $order );
+		}
+
 		if ( null !== $order_by ) {
 			return $this->search_in_replica( $query, $args, $order_by, $order );
 		}
 
 		return $this->get_index()->search( $query, $args );
+	}
+
+	private function multipleQuery( $queries, $args = null, $order_by = null, $order = 'desc' ) {
+		$multiQuery = [];
+		foreach( $queries as $query ) {
+
+			if (null !== $order_by) {
+				$replica      = $this->get_replica( $order_by, $order );
+				$replica_name = $replica->get_replica_index_name( $this );
+
+				$multiQuery[] = [
+					'indexName' => $replica_name,
+					'query' => $query,
+					'params' => $args
+				];
+			} else {
+				$multiQuery[] = [
+					'indexName' => $this->get_name(),
+					'query' => $query,
+					'params' => $args
+				];
+			}
+
+		}
+		return $this->client->multipleQueries($multiQuery);
 	}
 
 	/**

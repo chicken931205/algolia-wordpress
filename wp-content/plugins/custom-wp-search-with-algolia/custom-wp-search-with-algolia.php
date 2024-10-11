@@ -13,8 +13,8 @@
  * @since   1.0.0
  * @package customized-wp-search-with-algolia
  */
-define( 'ALGOLIA_CUSTOMIZED_JS_VERSION', '1.0.1' );
-define( 'ALGOLIA_CUSTOMIZED_CSS_VERSION', '1.0.1' );
+define( 'ALGOLIA_CUSTOMIZED_JS_VERSION', '1.0.2' );
+define( 'ALGOLIA_CUSTOMIZED_CSS_VERSION', '1.0.2' );
 define( 'ALGOLIA_CUSTOMIZED_FILE', __FILE__ );
 
 add_action( 'wp_enqueue_scripts', function() {
@@ -45,8 +45,11 @@ add_action( 'wp_enqueue_scripts', function() {
         }      
     }
 
-    $args['advancedSyntax'] = true;
-    $args['typoTolerance'] = 'false';
+    if ( is_search() && isset( $_GET['s'] ) ) {
+
+    }
+
+    $args['typoTolerance'] = false;
 
     return $args;
 }

@@ -144,11 +144,21 @@ class Algolia_Search {
 		$order_by = apply_filters( 'algolia_search_order_by', null );
 		$order    = apply_filters( 'algolia_search_order', 'desc' );
 
+		/***
+		 *  added by Golden Chicken
+		 */
+		$searchTerm = $query->query['s'];
+		preg_match('/(\d{2})(\d{5})/', $searchTerm, $parts);
+	
+		if ($parts) {
+			$searchTerm = $parts[1] . '-' . $parts[2];
+		}
+		/** end */
+		
 		try {
-			$results = $this->index->search( $query->query['s'], $params, $order_by, $order );
+			$results = $this->index->search( $searchTerm, $params, $order_by, $order );
 		} catch ( AlgoliaException $exception ) {
 			error_log( $exception->getMessage() ); // phpcs:ignore -- Legacy.
-
 			return;
 		}
 

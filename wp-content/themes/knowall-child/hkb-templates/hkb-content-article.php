@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" class="hkb-articlemini" itemscope itemtype="https://schema.org/CreativeWork">
-	<div class="hkb-article__link" data_href="<?php the_permalink(); ?>" data_post_id="<?php the_ID(); ?>">
+	<a class="hkb-article__link" data_href="<?php the_permalink(); ?>" data_post_id="<?php the_ID(); ?>">
 	<h2 class="hkb-article__title" itemprop="headline">
 			<?php the_title(); ?>
 	</h2>
